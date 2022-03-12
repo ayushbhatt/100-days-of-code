@@ -10,6 +10,7 @@ export default function Navbar() {
                     <Link to="/" className="navbar-logo">
                         TRVL <img src={trvllogo} alt="logo" height="15" width="15" />
                     </Link>
+                    <div className='menu-icon'></div>
                 </div>
             </nav>
         </>

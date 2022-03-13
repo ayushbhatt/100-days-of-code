@@ -5,7 +5,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faRoute } from '@fortawesome/free-solid-svg-icons';
 import { faHamburger } from '@fortawesome/free-solid-svg-icons';
 import { Button } from './Button';
-
+import './Navbar.css'
 
 export default function Navbar() {
     const [click,setClick] = useState(false);
@@ -34,7 +34,7 @@ export default function Navbar() {
                         TRVL <FontAwesomeIcon icon={faRoute}/>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
-                        <FontAwesomeIcon icon={click ? faHamburger : faXmark}/>
+                        <FontAwesomeIcon icon={click ? faXmark : faHamburger}/>
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
